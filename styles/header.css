@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+button {
+    padding: 8px 0 5px 0;
+    border-style: none;
+    background-color: black;
+    color: greenyellow;
+
+}
+
+button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-color: rgb(255, 77, 12);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+a {
+    color: greenyellow;
+}
+
+.animate {
+    transform: scale(1.05);
+    transition: traansform 0.5s ease-in-out;
+}
+
+.about-me {
+    display: block;
+    position: fixed;
+    top: 30px;
+    color: black;
+    background-color: rgb(209, 209, 209);
+    right: 25px;
+    left: 25px;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: Arial;
+    font-style: italic;
+}
+
+.about-me-invisible {
+    display: none;
+}
