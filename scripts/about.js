@@ -1,15 +1,27 @@
-const aboutButton = document.querySelector('.js-about-button');
-aboutButton.addEventListener('click', () => {
-    const aboutMe = document.querySelector('.js-about-me');
-    myAbout();
-    if (aboutMe.classList.contains('about-me-invisible')) {
-        aboutMe.classList.remove('about-me-invisible')
-        aboutMe.classList.add('about-me')
-    } else {
-        aboutMe.classList.remove('about-me');
-        aboutMe.classList.add('about-me-invisible');
-    }
-})
+import { projectAppear } from './projects.js'
+projectAppear();
+
+export function addRemove() {
+    const aboutButton = document.querySelector('.js-about-button');
+    aboutButton.addEventListener('click', () => {
+        const aboutMe = document.querySelector('.js-about-me');
+        myAbout();
+
+        if (aboutMe.classList.contains('about-me-invisible')) {
+            aboutMe.classList.remove('about-me-invisible')
+            aboutMe.classList.add('about-me')
+        } else {
+            aboutMe.classList.remove('about-me');
+            aboutMe.classList.add('about-me-invisible');
+        }
+
+        const sideBar = document.querySelector('.js-project-sidebar');
+        if (!sideBar.classList.contains('project-sidebar')) {
+            sideBar.classList.remove('project-sidebar-visible');
+            sideBar.classList.add('project-sidebar');
+        }
+    })
+};
 
 function myAbout() {
     const aboutMe = document.querySelector('.js-about-me');

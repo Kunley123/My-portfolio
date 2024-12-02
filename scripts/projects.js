@@ -1,16 +1,22 @@
+import { addRemove } from './about.js'
+
+addRemove();
+
 const buttonElement = document.querySelector('.js-project-button');
 const sideBar = document.querySelector('.js-project-sidebar');
 const projectList = document.querySelector('.js-project-list');
 buttonElement.addEventListener('click', () => {
     appearSidebar();
-    if (sideBar.classList.contains('project-sidebar')) {
-        sideBar.classList.remove('project-sidebar');
-        sideBar.classList.add('project-sidebar-visible');
-    } else {
-        sideBar.classList.remove('project-sidebar-visible');
-        sideBar.classList.add('project-sidebar');
+
+    const aboutMe = document.querySelector('.js-about-me');
+    if (!aboutMe.classList.contains('about-me-invisible')) {
+        aboutMe.classList.remove('about-me');
+        aboutMe.classList.add('about-me-invisble');
+        aboutMe.innerHTML = '';
     }
-})
+
+    projectAppear();
+});
 
 const projects = [
     {
@@ -48,4 +54,15 @@ function appearSidebar() {
                     </div>`;
         projectList.appendChild(projectLink);
     });
+}
+
+export function projectAppear() {
+    const sideBar = document.querySelector('.js-project-sidebar');
+    if (sideBar.classList.contains('project-sidebar')) {
+        sideBar.classList.remove('project-sidebar');
+        sideBar.classList.add('project-sidebar-visible');
+    } else {
+        sideBar.classList.remove('project-sidebar-visible');
+        sideBar.classList.add('project-sidebar');
+    }
 }
