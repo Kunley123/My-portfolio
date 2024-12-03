@@ -15,11 +15,7 @@ export function addRemove() {
             aboutMe.classList.add('about-me-invisible');
         }
 
-        const sideBar = document.querySelector('.js-project-sidebar');
-        if (!sideBar.classList.contains('project-sidebar')) {
-            sideBar.classList.remove('project-sidebar-visible');
-            sideBar.classList.add('project-sidebar');
-        }
+        sidebarDisappear();
     })
 };
 
@@ -47,3 +43,11 @@ function myAbout() {
         collaborate on exciting projects, feel free to reach out!
     </p>`
 };
+
+function sidebarDisappear() {
+    const sideBar = document.querySelector('.js-project-sidebar');
+    if (!sideBar.classList.contains('project-sidebar')) {
+        sideBar.classList.remove('project-sidebar-visible');
+        sideBar.classList.add('project-sidebar');
+    }
+}

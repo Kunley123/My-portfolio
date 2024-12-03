@@ -8,12 +8,7 @@ const projectList = document.querySelector('.js-project-list');
 buttonElement.addEventListener('click', () => {
     appearSidebar();
 
-    const aboutMe = document.querySelector('.js-about-me');
-    if (!aboutMe.classList.contains('about-me-invisible')) {
-        aboutMe.classList.remove('about-me');
-        aboutMe.classList.add('about-me-invisble');
-        aboutMe.innerHTML = '';
-    }
+    aboutmeRemove();
 
     projectAppear();
 });
@@ -66,3 +61,12 @@ export function projectAppear() {
         sideBar.classList.add('project-sidebar');
     }
 }
+
+function aboutmeRemove() {
+    const aboutMe = document.querySelector('.js-about-me');
+    if (!aboutMe.classList.contains('about-me-invisible')) {
+        aboutMe.classList.remove('about-me');
+        aboutMe.classList.add('about-me-invisble');
+        aboutMe.innerHTML = '';
+    }
+};
