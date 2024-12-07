@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/images.css">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
 
 </head>
 
@@ -15,8 +16,8 @@
     <div class="overall">
         <div class="header">
             <div class="header-buttons">
-                <button>PORTFOLIO</button><button class="home-button js-home-button"><a
-                        href="folio.html">HOME</a></button>
+                <button class="portfolio-button js-portfolio-button">PORTFOLIO</button><button
+                    class="home-button js-home-button"><a href="folio.html">HOME</a></button>
                 <button class="project-button js-project-button">
                     PROJECTS
                 </button>
@@ -25,7 +26,13 @@
             </div>
         </div>
 
-
+        <div class="portfolio-side js-portfolio-side">
+            <div class="portfolio-list js-portfolio-list">
+                <h1>My projects</h1>
+                <h1>Featured work</h1>
+                <h1>What I've built</h1>
+            </div>
+        </div>
 
         <div class="project-sidebar js-project-sidebar">
             <div class="project-list js-project-list">
@@ -62,6 +69,8 @@
 
     <script type="module" src="scripts/projects.js"></script>
     <script type="module" src="scripts/about.js"></script>
+    <script type="module" src="scripts/portfolio.js"></script>
+    <script type="module" src="scripts/general.js"></script>
 </body>
 
 </html>

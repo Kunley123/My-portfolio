@@ -1,5 +1,9 @@
 import { projectAppear } from './projects.js'
+import { portfolioDisappear } from './portfolio.js'
+
+
 projectAppear();
+
 
 export function addRemove() {
     const aboutButton = document.querySelector('.js-about-button');
@@ -16,8 +20,12 @@ export function addRemove() {
         }
 
         sidebarDisappear();
+        portfolioDisappear();
     })
+
+
 };
+
 
 function myAbout() {
     const aboutMe = document.querySelector('.js-about-me');
@@ -44,7 +52,7 @@ function myAbout() {
     </p>`
 };
 
-function sidebarDisappear() {
+export function sidebarDisappear() {
     const sideBar = document.querySelector('.js-project-sidebar');
     if (!sideBar.classList.contains('project-sidebar')) {
         sideBar.classList.remove('project-sidebar-visible');

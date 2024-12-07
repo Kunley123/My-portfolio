@@ -1,4 +1,5 @@
 import { addRemove } from './about.js'
+import { portfolioDisappear } from './portfolio.js'
 
 addRemove();
 
@@ -11,6 +12,7 @@ buttonElement.addEventListener('click', () => {
     aboutmeRemove();
 
     projectAppear();
+    portfolioDisappear();
 });
 
 const projects = [
@@ -62,7 +64,7 @@ export function projectAppear() {
     }
 }
 
-function aboutmeRemove() {
+export function aboutmeRemove() {
     const aboutMe = document.querySelector('.js-about-me');
     if (!aboutMe.classList.contains('about-me-invisible')) {
         aboutMe.classList.remove('about-me');
@@ -70,3 +72,9 @@ function aboutmeRemove() {
         aboutMe.innerHTML = '';
     }
 };
+
+const disappearPage = document.querySelector
+disappearPage.addEventListener('click', () => {
+    aboutmeRemove();
+
+});

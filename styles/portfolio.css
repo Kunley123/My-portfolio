@@ -1,0 +1,28 @@
+.portfolio-side {
+    display: none;
+}
+
+.portfolio-side-visible {
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: yellowgreen;
+    left: 30;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 999;
+    padding: 10px 10px 10px 10px;
+}
+
+h1 {
+    line-height: 1px;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: italic;
+    cursor: pointer;
+}
