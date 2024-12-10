@@ -1,3 +1,7 @@
+import { sidebarDisappear } from './about.js'
+import { aboutmeRemove } from './projects.js'
+import { portfolioDisappear } from './portfolio.js'
+
 const contactDisplay = document.querySelector('.js-contact-display');
 const contactButton = document.querySelector('.js-contact-button');
 contactButton.addEventListener('click', () => {
@@ -8,6 +12,16 @@ contactButton.addEventListener('click', () => {
         contactDisplay.classList.remove('contact-display-visible');
         contactDisplay.classList.add('contact-display');
     }
+
+    sidebarDisappear();
+    aboutmeRemove();
+    portfolioDisappear();
 });
 
-const contactList = document.querySelector('.js-contact-list');
+export function contactOff() {
+    const contactDisplay = document.querySelector('.js-contact-display');
+    if (!contactDisplay.classList.contains('contact-display')) {
+        contactDisplay.classList.remove('contact-display-visible');
+        contactDisplay.classList.add('contact-display');
+    }
+}

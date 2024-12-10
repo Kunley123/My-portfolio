@@ -1,5 +1,6 @@
 import { aboutmeRemove } from './projects.js'
 import { sidebarDisappear } from './about.js'
+import { contactOff } from './contact.js'
 
 const portfolioSide = document.querySelector('.js-portfolio-side');
 const portfolioButton = document.querySelector('.js-portfolio-button');
@@ -7,6 +8,7 @@ portfolioButton.addEventListener('click', () => {
     aboutmeRemove();
     sidebarDisappear();
     portfolioAppear();
+    contactOff();
 })
 
 function portfolioAppear() {

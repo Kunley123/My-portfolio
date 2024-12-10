@@ -1,5 +1,6 @@
 import { addRemove } from './about.js'
 import { portfolioDisappear } from './portfolio.js'
+import { contactOff } from './contact.js'
 
 addRemove();
 
@@ -11,6 +12,7 @@ buttonElement.addEventListener('click', () => {
     aboutmeRemove();
     projectAppear();
     portfolioDisappear();
+    contactOff();
 });
 
 const projects = [

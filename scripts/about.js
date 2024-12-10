@@ -1,5 +1,6 @@
 import { projectAppear } from './projects.js'
 import { portfolioDisappear } from './portfolio.js'
+import { contactOff } from './contact.js'
 
 
 projectAppear();
@@ -21,6 +22,7 @@ export function addRemove() {
 
         sidebarDisappear();
         portfolioDisappear();
+        contactOff();
     })
 
 
