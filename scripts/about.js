@@ -30,7 +30,7 @@ export function addRemove() {
 function myAbout() {
     const aboutMe = document.querySelector('.js-about-me');
     aboutMe.innerHTML = `<p>
-        Hi, I'm Adebanjo Adekunle, a web developer with some year of experience
+        Hi, I'm Adebanjo Adekunle, a web developer with some years of experience
         building modern, user-friendly web applications. I specialize in creating
         full-stack solutions that blend sleek frontends with efficient backends.
     </p>

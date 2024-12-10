@@ -8,9 +8,7 @@ const sideBar = document.querySelector('.js-project-sidebar');
 const projectList = document.querySelector('.js-project-list');
 buttonElement.addEventListener('click', () => {
     appearSidebar();
-
     aboutmeRemove();
-
     projectAppear();
     portfolioDisappear();
 });

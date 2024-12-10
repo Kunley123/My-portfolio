@@ -1,0 +1,38 @@
+.contact-display {
+    display: none;
+}
+
+.contact-display-visible {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    right: 20px;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+
+.let-connect {
+    font-family: arial;
+    font-size: large;
+    font-style: italic;
+}
+
+.contact-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.contact-icon-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+}
