@@ -1,11 +1,12 @@
-// import { addRemove } from './about.js'
-// addRemove();
+import { sidebarDisappear } from './about.js'
+import { aboutmeRemove } from './projects.js'
+import { portfolioDisappear } from './portfolio.js'
+import { contactOff } from './contact.js'
 
-// const aboutMe = document.querySelector('.js-about-me');
-// if (aboutMe) {
-//     document.addEventListener('click', (event) => {
-//         if (!aboutMe.contains(event.target)) {
-//             aboutMe.classList.add('about-me-invisible');
-//         }
-//     })
-// }
+const mainBody = document.querySelector('.js-main-body')
+mainBody.addEventListener('click', () => {
+    sidebarDisappear();
+    aboutmeRemove();
+    portfolioDisappear();
+    contactOff();
+})

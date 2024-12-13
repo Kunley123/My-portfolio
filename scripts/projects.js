@@ -72,9 +72,3 @@ export function aboutmeRemove() {
         aboutMe.innerHTML = '';
     }
 };
-
-const disappearPage = document.querySelector
-disappearPage.addEventListener('click', () => {
-    aboutmeRemove();
-
-});
