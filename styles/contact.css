@@ -24,6 +24,9 @@
     font-family: arial;
     font-size: large;
     font-style: italic;
+    margin: 10px 10px 25px 10px;
+    color: grey;
+    opacity: 0.8;
 }
 
 .contact-icon {
@@ -34,6 +37,69 @@
 .contact-icon-side {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 10px;
+    margin: 0 10px 20px 10px;
     row-gap: 5px;
+}
+
+.whats-app,
+.insta-gram,
+.linked-in,
+.git-hub,
+.twitter-x,
+.e-mail,
+.phone-call,
+.face-book {
+    position: relative;
+}
+
+.tool-tip {
+    position: absolute;
+    font-family: Arial;
+    font-size: 8px;
+    font-weight: bold;
+    color: greenyellow;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 5px;
+    top: -20px;
+    left: -7px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.whats-app:hover .tool-tip,
+.insta-gram:hover .tool-tip,
+.linked-in:hover .tool-tip,
+.git-hub:hover .tool-tip {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.tool-tips {
+    position: absolute;
+    font-family: Arial;
+    font-size: 8px;
+    font-weight: bold;
+    color: greenyellow;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 5px;
+    bottom: -15px;
+    left: -7px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.twitter-x:hover .tool-tips,
+.e-mail:hover .tool-tips,
+.phone-call:hover .tool-tips,
+.face-book:hover .tool-tips {
+    opacity: 0.5;
+    transition: 0.3s;
 }
