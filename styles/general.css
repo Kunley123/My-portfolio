@@ -6,6 +6,12 @@ body {
     margin: 30px 10px 10px 10px;
 }
 
+@media(min-width: 1000px) {
+    .overall {
+        margin-top: 60px;
+    }
+}
+
 .main-body {
     background-color: rgb(30, 22, 22);
     border-style: solid;
@@ -13,6 +19,7 @@ body {
     border-color: yellowgreen;
     border-width: 2px;
 }
+
 
 .projects-heading {
     display: grid;

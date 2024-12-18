@@ -10,6 +10,11 @@
     margin-left: 10px;
 }
 
+@media(max-width: 750px) {
+    .image-item {
+        width: 96%;
+    }
+}
 
 
 img {
@@ -17,4 +22,10 @@ img {
     width: 100%;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media(max-width: 750px) {
+    img {
+        height: 250px;
+    }
 }

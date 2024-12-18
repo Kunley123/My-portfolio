@@ -9,6 +9,12 @@
     margin-left: 15px;
 }
 
+@media(max-width: 750px) {
+    .projects-div {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .project-sidebar {
     display: none;
 }

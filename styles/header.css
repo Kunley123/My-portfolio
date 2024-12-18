@@ -7,9 +7,16 @@
     left: 0;
 }
 
+
 .header-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media(min-width: 1000px) {
+    .header-buttons {
+        height: 60px;
+    }
 }
 
 button {
@@ -17,7 +24,12 @@ button {
     border-style: none;
     background-color: black;
     color: greenyellow;
+}
 
+@media(min-width: 1000px) {
+    button {
+        font-size: 18px;
+    }
 }
 
 button:hover {
@@ -50,6 +62,12 @@ a {
     font-family: Arial;
     font-style: italic;
 
+}
+
+@media(min-width: 1000px) {
+    .about-me {
+        top: 61px;
+    }
 }
 
 .about-me-invisible {

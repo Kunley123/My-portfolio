@@ -2,8 +2,9 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My portfolio</title>
-
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/images.css">
@@ -15,7 +16,7 @@
 
 <body>
     <div class="overall">
-        <div class="header">
+        <header class="header">
             <div class="header-buttons">
                 <button class="portfolio-button js-portfolio-button">PORTFOLIO</button><button
                     class="home-button js-home-button"><a href="folio.html">HOME</a></button>
@@ -25,7 +26,7 @@
                 <button class="about-button js-about-button">ABOUT</button>
                 <button class="contact-button js-contact-button">CONTACT</button>
             </div>
-        </div>
+        </header>
 
         <div class="portfolio-side js-portfolio-side">
             <div class="portfolio-list js-portfolio-list">
@@ -101,27 +102,28 @@
             </div>
         </div>
 
-        <div class="main-body js-main-body">
-            <div class="image-div">
-                <img class="image-item" src="My-images/WEB DEVELOPMENT.png">
-            </div>
+        <main>
+            <div class="main-body js-main-body">
+                <div class="image-div">
+                    <img class="image-item" src="My-images/WEB DEVELOPMENT.png">
+                </div>
 
-            <div class="projects-heading">
-                PROJECTS
+                <div class="projects-heading">
+                    PROJECTS
+                </div>
+                <div class="projects-div">
+                    <img src="My-images/Amazon clone.jpg">
+                    <img src="My-images/eight-plux.png">
+                    <img src="My-images/IMG_7172.PNG">
+                    <img src="My-images/IMG_6831.WEBP">
+                    <img src="My-images/IMG_2461.JPG">
+                    <img src="My-images/RROZ6360.JPG">
+                    <img src="My-images/OGLM8701.JPG">
+                    <img src="My-images/IMG_2718.PNG">
+                </div>
             </div>
-            <div class="projects-div">
-                <img src="My-images/IMG_0816.PNG">
-                <img src="My-images/IMG_1436.PNG">
-                <img src="My-images/IMG_2448.JPG">
-                <img src="My-images/QFKM1061.JPG">
-                <img src="My-images/IMG_2461.JPG">
-                <img src="My-images/RROZ6360.JPG">
-                <img src="My-images/OGLM8701.JPG">
-                <img src="My-images/IMG_2718.PNG">
-            </div>
-        </div>
+        </main>
     </div>
-
 
 
     <script type="module" src="scripts/projects.js"></script>
