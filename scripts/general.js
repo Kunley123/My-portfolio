@@ -10,3 +10,11 @@ mainBody.addEventListener('click', () => {
     portfolioDisappear();
     contactOff();
 })
+
+window.addEventListener('scroll', () => {
+    sidebarDisappear();
+    aboutmeRemove();
+    portfolioDisappear();
+    contactOff();
+})
+
