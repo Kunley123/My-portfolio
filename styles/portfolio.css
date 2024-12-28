@@ -26,3 +26,7 @@ h1 {
     font-style: italic;
     cursor: pointer;
 }
+
+a {
+    color: black;
+}
