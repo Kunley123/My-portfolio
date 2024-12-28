@@ -40,9 +40,11 @@ button:hover {
     text-underline-offset: 4px;
 }
 
-a {
+.home-a {
     color: greenyellow;
 }
+
+
 
 .animate {
     transform: scale(1.05);
