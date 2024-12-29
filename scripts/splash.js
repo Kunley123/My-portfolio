@@ -8,3 +8,9 @@ window.addEventListener('load', () => {
         })
     }, 2000);
 })
+
+const homeButton = document.querySelector('.js-home-button')
+homeButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behaviour: 'smooth' });
+    console.log('good to go')
+})
