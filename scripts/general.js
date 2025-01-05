@@ -18,3 +18,12 @@ window.addEventListener('scroll', () => {
     contactOff();
 })
 
+const homeButton = document.querySelector('.js-home-button')
+homeButton.addEventListener('click', () => {
+    sidebarDisappear();
+    aboutmeRemove();
+    portfolioDisappear();
+    contactOff();
+
+    window.scrollTo({ top: 0, behaviour: 'smooth' });
+})
